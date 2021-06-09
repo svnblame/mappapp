@@ -3,7 +3,6 @@ import mapboxgl from "mapbox-gl/dist/mapbox-gl";
 import { render } from "react-dom";
 
 function App() {
-  const [random, setRandom] = useState(Math.random());
   const [marker, setMarker] = useState(); // default value is undefined
 
   // Mock store locations from db.
@@ -30,7 +29,7 @@ function App() {
 
     // Add marker
     const marker = new mapboxgl.Marker()
-      .setLgnLat([12.567898, 55.675830])
+      .setLngLat([12.567898, 55.675830])
       .addTo(map);
 
       setMarker(marker);
