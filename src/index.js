@@ -14,7 +14,7 @@ function App() {
 
   function handleStoreChange(event) {
     const location = event.target.value;
-    marker.setLgnLat(stores[location]);
+    marker.setLngLat(stores[location]);
   }
 
   mapboxgl.accessToken = "pk.eyJ1Ijoic3ZuYmxhbWUiLCJhIjoiY2twN2c1NHZpMDhobDJ3bGlkNjF0NWszaCJ9.go5qKdpS6kG93XxNP2v73w";
